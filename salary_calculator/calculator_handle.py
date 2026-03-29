@@ -8,13 +8,9 @@
 #  ========================================================================================================
 
 from pathlib import Path
+from shared.helpers import load_data
 
 default_result = (0, 0)
-
-def load_data(filename):
-    with open(filename, "r") as file:
-        return file.readlines()
-
 
 def get_total_sum(list: list[int]) -> int:
     return sum(list)
